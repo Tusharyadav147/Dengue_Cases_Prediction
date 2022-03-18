@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/37ca218f1d.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./static/logo.png" type="image/x-icon">
+    <title>Prediction</title>
+</head>
+<body>
+
+<section class="form" id="form">
+    <h1 class="heading">BigMart Sales Prediction</h1>
+    <form action="/predict" method="POST">
+        <div class="inputBox">
+            <div class="input">
+                <span>City</span>
+                <select class="city" id="city" name="city" required>
+                    <option value="#">Select</option>
+                    <option value=0>San Juan</option>
+                    <option value=1>Iquitos</option>
+                </select>
+            </div>
+            <div class="input">
+                <span>Year</span>
+                <input type="Year" id="Year" class="Year" name="Year" placeholder="Enter Year">
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>Week Of Year</span>
+                <input type="week_of_year" name="Week_of_year" placeholder="Enter Week Of Year" required>
+            </div>
+            <div class="input">
+                <span>ndvi se</span>
+                <input type="ndvi_se" name="ndvi_se" placeholder="Enter ndvi se" required>
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>Precipitation Amt MM</span>
+                <input type="precipitation_amt_mm" name="precipitation_amt_mm" placeholder="Enter Precipitation Amt MM" required>
+            </div>
+            <div class="input">
+                <span>Reanalysis Dew Point Temp K</span>
+                <input type="reanalysis_dew_point_temp_k" name="reanalysis_dew_point_temp_k" placeholder="Enter Reanalysis Dew Point Temp K" required>
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>Reanalysis Precip Amt Kg Per M2</span>
+                <input type="reanalysis_precip_amt_kg_per_m2" name="reanalysis_precip_amt_kg_per_m2" placeholder="Enter Reanalysis Precip Amt Kg Per M2" required>
+            </div>
+            <div class="input">
+                <span>Station Precip MM</span>
+                <input type="station_precip_mm" name="station_precip_mm" placeholder="Enter Station Precip MM" required>
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span></span>
+                <button class="btn">Predict</button>
+            </div>
+            <div class="input">
+                <span></span>
+                <a href="/table" class="btn">New Data</a>
+                <a href="/" class="btn">Log Out</a>
+            </div>
+        </div>
+    </form>
+</section>
+
+</body>
+</html>

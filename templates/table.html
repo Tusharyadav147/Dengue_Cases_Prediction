@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/table.css">
+    <link rel="icon" href="./static/logo.png" type="image/x-icon">
+    <title>New Data Stored</title>
+</head>
+<body>
+    <header>
+        <h1>New Predicted Data</h1>
+        <a href="/index">Back</a>
+        <hr>
+    </header>
+    <div class="table">
+    <table>
+        <tr id="header">
+            <th>City</th>
+            <th>Year</th>
+            <th>Week of Year</th>
+            <th>ndvi Se</th>
+            <th>precipitation_amt_mm</th>
+            <th>reanalysis_dew_point_temp_k</th>
+            <th>reanalysis_precip_amt_kg_per_m2</th>
+            <th>station_precip_mm</th>
+            <th>Total_Cases</th>
+        </tr>
+        {% for row in value %}
+            <tr>
+                <td>{{row[0]}}</td>
+                <td>{{row[1]}}</td>
+                <td>{{row[2]}}</td>
+                <td>{{row[3]}}</td>
+                <td>{{row[4]}}</td>
+                <td>{{row[5]}}</td>
+                <td>{{row[6]}}</td>
+                <td>{{row[7]}}</td>
+                <td>{{row[8]}}</td>
+            </tr>
+        {% endfor %}  
+    </table>
+    </div>
+</body>
+
+</html>

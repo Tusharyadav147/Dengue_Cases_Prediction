@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
+:root{
+    --yellow:#f9ca24;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+*::selection{
+    background:var(--yellow);
+    color:#333;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+/* Font style code */
+@font-face {
+    font-family:Gre ;
+    src: url('../Blooger/fonts/Grechen_Fuemen/GrechenFuemen-Regular.ttf');
+}
+
+@font-face {
+    font-family:Grey_Qo;
+    src: url('../Blooger/fonts/Grey_Qo/GreyQo-Regular.ttf');
+}
+
+@font-face {
+    font-family: Rubik;
+    src: url('../Blooger/fonts/Rubik_Beastly/RubikBeastly-Regular.ttf');
+}
+:root{
+     /* Theme Font Family */
+     --gre: 'Gre', cursive;
+     --grey_qo: 'Grey_Qo', cursive;
+     --Rubik: 'Rubik', cursive;
+}
+/* Font style code */
+section{
+    padding:2rem 9%;
+}
+
+.btn{
+    margin-top: 1rem;
+    margin-left: 1.6rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color:#fff;
+    background: #333;
+    border-radius: .5rem;
+    cursor: pointer;
+    padding:.8rem 3rem;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background:var(--yellow);
+    color: black;
+}
+
+
+body{
+    background-image: url("./background.jpg");
+    background-size: 100% 100%;
+}
+
+.form{
+    position: sticky;
+    display: block;
+}
+.form .heading{
+    text-align: center;
+    color:black;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+.form .hide{
+    display: none;
+}
+.form form{
+    max-width:90rem;
+    border-radius: .5rem;
+    box-shadow:rgba(0, 0, 0, 0.603);
+    border:.1rem solid rgba(0,0,0,.2);
+    background:#f9cb2486;
+    padding:1.5rem;
+    margin:0 auto;
+}
+.form form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form form .inputBox .input{
+    width:49%;
+}
+.form form .inputBox .input select{
+    background:rgba(238, 238, 238, 0.658);
+    border-radius: .5rem;
+    padding:1rem;
+    font-size: 1.6rem;
+    color: black;
+    text-transform: none;
+    margin-bottom: 1rem;
+    width:90%;
+}
+.form form .inputBox .input .empty{
+    display: block;
+}
+.form form .inputBox .input .special-type,
+.form form .inputBox .input .sweets-type,
+.form form .inputBox .input .soft-drinks-type,
+.form form .inputBox .input .juice-type,
+.form form .inputBox .input .pizza-type{
+    display: none;
+}
+.form form .inputBox .input span{
+    display:block;
+    padding:.5rem 0;
+    font-size: 1.5rem;
+    color:black;
+}
+
+.form form .inputBox .input input,
+.form form .inputBox .input h3,
+.form form .inputBox .input textarea{
+    background:rgba(238, 238, 238, 0.658);
+    border-radius: .5rem;
+    padding:1rem;
+    font-size: 1.6rem;
+    color: black;
+    text-transform: none;
+    margin-bottom: 1rem;
+    width:90%;
+}
+
+.form form .inputBox .input input:focus,
+.form form .inputBox .input textarea:focus{
+    border:.1rem solid green;
+}
+.form form .inputBox .input h3{
+    cursor:not-allowform
+}
+
+.form form .btn{
+    margin-top: 0;
+}
+.form form .value{
+    padding: 1rem;
+    background-color: rgba(206, 162, 19, 0.822);
+    border-radius: 1rem;
+}
