@@ -42,8 +42,8 @@ def predict():
             feature = request.form
             print(feature)
             city = int(feature["city"])
-            year = int(feature["Year"])
-            week_of_year = int(feature["Week_of_year"])
+            year = 2018
+            week_of_year = 18
             ndvi_se = float(feature["ndvi_se"])
             precipitation_amt_mm = float(feature["precipitation_amt_mm"])
             reanalysis_dew_point_temp_k = float(feature["reanalysis_dew_point_temp_k"])
